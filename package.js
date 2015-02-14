@@ -1,6 +1,6 @@
 Package.describe({
-  name: 'ox2:sortable',
-  summary: 'Sortable list components',
+  name: 'ox2:banner',
+  summary: 'Banner component',
   version: '1.0.0',
   git: ' /* Fill me in! */ '
 });
