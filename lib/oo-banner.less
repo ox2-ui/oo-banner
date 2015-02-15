@@ -1,4 +1,19 @@
-.oo-Banner {
-  width: 300px;
-  flex: 1;
+[oo-Banner] {
+  display: flex;
+  flex-direction: column;
+
+  .oo-Banner--image {
+    width: 100%;
+    max-width: 300px;
+    align-self: center;
+    padding: 1rem;
+  }
+}
+
+[oo-Banner~="shadow"] {
+  box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.25);
+}
+
+[oo-Banner~="push"] {
+  margin: 1.5rem 1rem;
 }
