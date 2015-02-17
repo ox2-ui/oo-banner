@@ -1,9 +1,9 @@
 template(name="ooBanner")
-  div.js-enableTouch(oo-Banner="shadow push" class="jsClass" oo-Color="back:white")
+  div.js-goToSponsor(oo-Banner="shadow push" class="jsClass" oo-Color="back:white")
     if header
-      div.js-enableTouch(item="no-bottom tiny" oo-Color="back:neutral")
-        div.js-enableTouch(item-title="small line-height:small" oo-Color="text:white") {{header}}
+      div(item="no-bottom tiny" oo-Color="back:neutral")
+        div(item-title="small line-height:small" oo-Color="text:white") {{header}}
     if title
-      div.js-enableTouch(item="no-bottom tiny" oo-Color="back:neutral-tint")
-        div.js-enableTouch(item-title="small line-height:small" oo-Color="text:neutral") {{title}}
+      div(item="no-bottom tiny" oo-Color="back:neutral-tint")
+        div(item-title="small line-height:small" oo-Color="text:neutral") {{title}}
     img.oo-Banner--image.js-enableTouch(src="{{image}}", alt="")
