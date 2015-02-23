@@ -17,7 +17,7 @@ Package.onUse(function(api) {
     ]);
   // 3rd party
   api.use([
-    'lauricio:less-autoprefixer@1.0.15','mquandalle:jade@0.4.1'
+    'lauricio:less-autoprefixer@1.0.15','mquandalle:jade@0.4.1','meteorhacks:subs-manager@1.3.0'
     ]);
   api.addFiles('lib/oo-banner.jade', C);
   api.addFiles('lib/oo-banner.js', C);
