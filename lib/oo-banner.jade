@@ -1,9 +1,10 @@
 template(name="ooBanner")
-  div(oo-Banner="shadow push {{oo}}" class="{{jsClass}}" oo-Color="back:white")
-    if header
-      div(item="no-bottom tiny" oo-Color="back:neutral")
-        div(item-title="small line-height:small" oo-Color="text:white") {{header}}
-    if title
-      div(item="no-bottom tiny" oo-Color="back:neutral-tint")
-        div(item-title="small line-height:small" oo-Color="text:neutral") {{title}}
-    img.oo-Banner--image.js-enableTouch(src="{{image}}", alt="")
+  if image
+    div(oo-Banner="shadow push {{oo}}" class="{{jsClass}}" oo-Color="back:white")
+      if header
+        div(item="no-bottom tiny" oo-Color="back:neutral")
+          div(item-title="small line-height:small" oo-Color="text:white") {{header}}
+      if title
+        div(item="no-bottom tiny" oo-Color="back:neutral-tint")
+          div(item-title="small line-height:small" oo-Color="text:neutral") {{title}}
+      img.oo-Banner--image.js-enableTouch(src="{{image}}", alt="")
