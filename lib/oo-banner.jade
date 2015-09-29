@@ -4,7 +4,7 @@ template(name="ooBanner")
       if header
         div(item="no-bottom tiny" oo-Color="back:neutral")
           div(item-title="small line-height:small" oo-Color="text:white") {{header}}
-      if title
+      if titlePassed
         div(item="no-bottom tiny" oo-Color="back:neutral-tint")
           div(item-title="small line-height:small" oo-Color="text:neutral") {{title}}
       img.oo-Banner--image.js-enableTouch(src="{{image}}", alt="")
