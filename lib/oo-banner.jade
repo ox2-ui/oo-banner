@@ -1,5 +1,5 @@
 template(name="ooBanner")
-  if image
+  if ifAnyDataPassed
     div(oo-Banner="shadow push {{oo}}" class="{{jsClass}}" oo-Color="back:white")
       if header
         div(item="no-bottom tiny" oo-Color="back:neutral")
