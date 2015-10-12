@@ -1,6 +1,6 @@
 template(name="ooBanner")
   if ifAnyDataPassed
-    div(oo-Banner="shadow push {{oo}}" class="{{jsClass}}" style="background-color:{{backgroundColor}};")
+    div(oo-Banner="shadow push {{oo}} {{#if fullWidth}}full-width{{/if}}" class="{{jsClass}}" style="background-color:{{backgroundColor}};")
       if header
         div(item="no-bottom tiny" oo-Color="back:neutral")
           div(item-title="small line-height:small" oo-Color="text:white") {{header}}
