@@ -28,3 +28,38 @@
     max-width: 100%;
   }
 }
+
+[oo-Banner~="direction:row"], [oo-Banner~="d:row"] {
+  flex-direction: row;
+}
+
+[oo-Banner~="w:auto"] {
+
+  .oo-Banner--image {
+    width: auto;
+    max-width: auto;
+  }
+
+}
+
+[oo-Banner~="vh:15"] {
+
+  .oo-Banner--image {
+    max-height: 14vmin;
+  }
+}
+
+[oo-Banner~="vw:30"] {
+
+  .oo-Banner--image {
+    max-width: vmin;
+  }
+}
+
+[oo-Banner~="no-push"] {
+
+  .oo-Banner--image {
+    padding: 0;
+  }
+
+}
