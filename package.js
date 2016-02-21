@@ -1,7 +1,7 @@
 Package.describe({
   name: 'ox2:banner',
   summary: 'TESTING_DO_NOT_USE Banner component',
-  version: '1.3.1',
+  version: '1.4.0',
   git: ' /* Fill me in! */ '
 });
 
@@ -13,11 +13,13 @@ Package.onUse(function(api) {
   api.versionsFrom('1.2.0.2');
   // Core
   api.use([
-    'templating'
+    'templating',
+    'less',
+    'reactive-var'
     ]);
   // 3rd party
   api.use([
-    'lauricio:less-autoprefixer@2.5.0_3','mquandalle:jade@0.4.1','meteorhacks:subs-manager@1.3.0'
+    'mquandalle:jade@0.4.9','meteorhacks:subs-manager@1.3.0'
     ]);
   api.addFiles('lib/oo-banner.jade', C);
   api.addFiles('lib/oo-banner.js', C);
