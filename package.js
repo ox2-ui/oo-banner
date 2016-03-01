@@ -1,7 +1,7 @@
 Package.describe({
   name: 'ox2:banner',
-  summary: 'TESTING_DO_NOT_USE Banner component',
-  version: '1.4.0',
+  summary: 'DO NOT USE',
+  version: '1.5.0',
   git: ' /* Fill me in! */ '
 });
 
