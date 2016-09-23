@@ -7,4 +7,7 @@ template(name="ooBanner")
       if titlePassed
         div(item="no-bottom tiny" oo-Color="back:neutral-tint")
           div(item-title="small line-height:small" oo-Color="text:neutral") {{title}}
-      img.oo-Banner--image.js-enableTouch(src="{{image}}", alt="")
+      if loadFromLocal
+        img.js-Image.oo-Banner--image.js-enableTouch(src="{{imageLocal}}", onerror="this.onerror=null;this.src='{{image}}';"  alt="")
+      else
+        img.oo-Banner--image.js-enableTouch(src="{{image}}", alt="")
