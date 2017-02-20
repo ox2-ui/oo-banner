@@ -1,7 +1,7 @@
 Package.describe({
   name: 'ox2:banner',
   summary: 'DO NOT USE',
-  version: '3.0.0',
+  version: '3.0.1',
   git: ' /* Fill me in! */ '
 });
 
